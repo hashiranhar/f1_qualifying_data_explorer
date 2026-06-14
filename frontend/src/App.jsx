@@ -35,12 +35,18 @@ export default function App() {
 
   return (
     <div>
-      <div style={{ marginBottom: "32px" }}>
-        <h1 style={{ fontSize: "20px", fontWeight: "700", marginBottom: "4px" }}>
-          F1 Qualifying Explorer
+      <div style={{
+        background: "#111",
+        borderRadius: "12px",
+        padding: "20px 24px",
+        marginBottom: "24px",
+        borderLeft: "4px solid #E10600",
+      }}>
+        <h1 style={{ fontSize: "18px", fontWeight: "700", color: "#fff", letterSpacing: "0.06em" }}>
+          F1 QUALIFYING EXPLORER
         </h1>
-        <p style={{ fontSize: "13px", color: "#888" }}>
-          2026 Australian Grand Prix · Qualifying
+        <p style={{ fontSize: "12px", color: "#888", marginTop: "4px", letterSpacing: "0.04em" }}>
+          2026 AUSTRALIAN GRAND PRIX · QUALIFYING
         </p>
       </div>
 
@@ -50,7 +56,7 @@ export default function App() {
         <p style={{ marginTop: "24px", fontSize: "13px", color: "#888" }}>Loading...</p>
       )}
       {error && (
-        <p style={{ marginTop: "24px", fontSize: "13px", color: "#c00" }}>{error}</p>
+        <p style={{ marginTop: "24px", fontSize: "13px", color: "#E10600" }}>{error}</p>
       )}
       <ResultsCard result={result} />
     </div>
